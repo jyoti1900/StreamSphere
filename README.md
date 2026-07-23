@@ -1,104 +1,110 @@
-# 🎬 StreamSphere
-
 <div align="center">
 
+# 🎬 StreamSphere
+
+### Enterprise-Grade Video Streaming Platform built with Full Stack TypeScript
+
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
 ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-13AA52?style=for-the-badge&logo=mongodb&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=FF9900)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
-### **A Modern Cloud-Native Video Streaming Platform**
-
-*Built with Next.js, NestJS, MongoDB, AWS S3, Docker, and TypeScript.*
+A scalable cloud-based video streaming platform featuring secure authentication,
+high-performance media delivery, AWS cloud integration, and modern full-stack architecture.
 
 </div>
 
 ---
 
-# 📖 Overview
+# 📑 Table of Contents
 
-**StreamSphere** is a full-stack cloud-native video streaming platform that enables users to securely upload, manage, and stream multimedia content. The application follows modern software engineering principles and scalable architecture using TypeScript across both frontend and backend.
+- Overview
+- Features
+- Tech Stack
+- Architecture
+- System Design
+- Folder Structure
+- Installation
+- Environment Variables
+- Running Locally
+- Docker Deployment
+- AWS Deployment
+- API Modules
+- Authentication
+- Cloud Storage
+- Security
+- Performance Optimizations
+- Future Improvements
+- Screenshots
+- Contributing
+- License
 
-The project integrates AWS cloud services for secure object storage, Docker for containerized deployment, and JWT authentication for user security.
+---
+
+# 🚀 Overview
+
+StreamSphere is a production-ready video streaming platform inspired by modern OTT
+applications. It allows users to securely upload, manage, stream, and organize
+video content while leveraging AWS cloud services for scalable media storage.
+
+The project follows industry-standard backend architecture using **NestJS**, **Next.js**,
+**MongoDB**, **AWS S3**, **Docker**, and **JWT Authentication**.
 
 ---
 
 # ✨ Features
 
-## 🔐 Authentication
+## Authentication
 
 - User Registration
 - Secure Login
 - JWT Authentication
-- Protected Routes
-- Password Hashing
+- Refresh Tokens
+- Protected APIs
 - Role-Based Authorization
 
 ---
 
-## 🎥 Video Management
+## Video Management
 
 - Upload Videos
-- Stream Videos
-- Update Video Information
 - Delete Videos
-- Video Categories
+- Edit Metadata
+- Categories
 - Thumbnail Upload
+- Video Details
+- Streaming Support
 
 ---
 
-## ☁️ Cloud Integration
+## Media Storage
 
-- AWS S3 File Storage
-- Secure Media Upload
-- Optimized File Management
-- Cloud-Based Asset Storage
+- AWS S3 Upload
+- Secure File Storage
+- Signed URLs
+- Thumbnail Storage
+- Automatic File Removal
 
 ---
 
-## 📱 User Experience
+## User Features
 
-- Responsive Design
-- Modern UI
-- Fast Navigation
-- Secure Dashboard
 - Profile Management
+- Watch History
+- Continue Watching
+- Search Videos
+- Responsive UI
 
 ---
 
-## ⚙ Backend Features
+## Admin Features
 
-- REST API
-- Modular Architecture
-- DTO Validation
-- Error Handling
-- File Upload API
-- MongoDB Integration
-
----
-
-# 🏗 Architecture
-
-```text
-                  +----------------------+
-                  |      Next.js         |
-                  |      Frontend        |
-                  +----------+-----------+
-                             |
-                       REST API (HTTPS)
-                             |
-                  +----------+-----------+
-                  |      NestJS API      |
-                  +----------+-----------+
-                             |
-          +------------------+------------------+
-          |                                     |
-     MongoDB Database                    AWS S3 Storage
-          |                                     |
-     User & Video Data                 Images & Videos
-```
+- Dashboard
+- User Management
+- Content Management
+- Analytics Ready
 
 ---
 
@@ -107,17 +113,16 @@ The project integrates AWS cloud services for secure object storage, Docker for 
 ## Frontend
 
 - Next.js
-- React.js
+- React
 - TypeScript
 - Tailwind CSS
+- Axios
 
 ## Backend
 
 - NestJS
+- Node.js
 - TypeScript
-- Express
-- JWT Authentication
-- Multer
 
 ## Database
 
@@ -126,9 +131,10 @@ The project integrates AWS cloud services for secure object storage, Docker for 
 
 ## Cloud
 
-- AWS EC2
 - AWS S3
 - IAM
+- EC2
+- CloudFront (Optional)
 
 ## DevOps
 
@@ -138,11 +144,35 @@ The project integrates AWS cloud services for secure object storage, Docker for 
 
 ---
 
-# 📂 Project Structure
+# 🏗 Architecture
 
-```text
+```
+Client
+     │
+     ▼
+Next.js Frontend
+     │
+ REST API
+     │
+     ▼
+NestJS Backend
+     │
+ ├───────────────┐
+ │               │
+ ▼               ▼
+MongoDB       AWS S3
+                 │
+                 ▼
+          Video Storage
+```
+
+---
+
+# 📁 Project Structure
+
+```
 StreamSphere
-│
+
 ├── frontend
 │   ├── app
 │   ├── components
@@ -159,16 +189,16 @@ StreamSphere
 │   │   ├── common
 │   │   └── config
 │   │
-│   ├── Dockerfile
-│   ├── docker-compose.yml
-│   └── package.json
+│   └── Dockerfile
 │
-└── README.md
+├── docker-compose.yml
+├── README.md
+└── .env.example
 ```
 
 ---
 
-# 🚀 Getting Started
+# ⚙ Installation
 
 ## Clone Repository
 
@@ -180,7 +210,7 @@ cd StreamSphere
 
 ---
 
-## Install Backend
+## Backend
 
 ```bash
 cd backend
@@ -190,7 +220,7 @@ npm install
 
 ---
 
-## Install Frontend
+## Frontend
 
 ```bash
 cd frontend
@@ -200,14 +230,14 @@ npm install
 
 ---
 
-# 🔐 Environment Variables
+# 🔑 Environment Variables
 
-## Backend (.env)
+Backend
 
 ```env
-PORT=
+PORT=3000
 
-MONGODB_URI=
+MONGO_URI=
 
 JWT_SECRET=
 
@@ -221,28 +251,26 @@ AWS_SECRET_ACCESS_KEY=
 
 AWS_BUCKET_NAME=
 
-CLOUDFRONT_DOMAIN=
+CLOUDFRONT_URL=
 ```
 
----
-
-## Frontend (.env)
+Frontend
 
 ```env
-NEXT_PUBLIC_API_URL=
+NEXT_PUBLIC_API_URL=http://localhost:3000
 ```
 
 ---
 
-# ▶ Run Backend
+# ▶ Running Locally
+
+Backend
 
 ```bash
 npm run start:dev
 ```
 
----
-
-# ▶ Run Frontend
+Frontend
 
 ```bash
 npm run dev
@@ -252,42 +280,106 @@ npm run dev
 
 # 🐳 Docker
 
+Build
+
 ```bash
-docker compose up --build
+docker-compose build
+```
+
+Run
+
+```bash
+docker-compose up -d
+```
+
+Stop
+
+```bash
+docker-compose down
 ```
 
 ---
 
-# 📡 API Endpoints
+# ☁ AWS Deployment
 
-## Authentication
+The project supports deployment using
 
-```http
-POST   /auth/register
-POST   /auth/login
-POST   /auth/refresh
+- AWS EC2
+- AWS S3
+- IAM Roles
+- Docker
+- GitHub Actions CI/CD
+- CloudFront (Optional)
+
+Deployment Flow
+
+```
+GitHub
+
+↓
+
+GitHub Actions
+
+↓
+
+AWS EC2
+
+↓
+
+Docker Container
+
+↓
+
+NestJS Server
+
+↓
+
+MongoDB
+
+↓
+
+AWS S3
 ```
 
 ---
 
-## Users
+# 🔐 Authentication Flow
 
-```http
-GET    /users/profile
-PUT    /users/profile
+```
+Register
+
+↓
+
+Login
+
+↓
+
+JWT Token
+
+↓
+
+Protected Routes
+
+↓
+
+Refresh Token
+
+↓
+
+Authenticated Session
 ```
 
 ---
 
-## Videos
+# 📦 API Modules
 
-```http
-GET    /videos
-GET    /videos/:id
-POST   /videos
-PUT    /videos/:id
-DELETE /videos/:id
-```
+- Authentication
+- Users
+- Videos
+- Uploads
+- Categories
+- Search
+- Dashboard
 
 ---
 
@@ -295,54 +387,91 @@ DELETE /videos/:id
 
 - JWT Authentication
 - Password Hashing
-- Role-Based Authorization
 - Protected Routes
+- Environment Variables
+- AWS IAM Permissions
+- Secure File Upload
+- Input Validation
 - Request Validation
-- Secure AWS Storage
-- Input Sanitization
 
 ---
 
-# ⚡ Performance
+# ⚡ Performance Optimizations
 
-- Optimized API Response
+- Lazy Loading
+- Optimized MongoDB Queries
+- Image Compression
+- Efficient API Design
+- Modular Architecture
 - Cloud Storage
 - Dockerized Deployment
-- Modular Backend
-- Efficient MongoDB Queries
-- Scalable Architecture
+- TypeScript Strict Mode
 
 ---
 
-# 📈 Future Enhancements
+# 📈 Future Improvements
 
-- Adaptive Video Streaming (HLS)
-- Video Compression
-- Playlist Support
-- Comments
-- Likes
-- Subscription System
-- Notifications
 - Live Streaming
-- AI Recommendations
+- Video Recommendations
+- Subscription Plans
+- Payment Gateway
+- AI Video Search
+- Notifications
+- Watch Together
+- Multi-language Support
 - Analytics Dashboard
 
 ---
 
-# 📚 Learning Outcomes
+# 📸 Screenshots
 
-This project demonstrates:
+```
+Add screenshots here
 
-- Full-Stack TypeScript Development
-- REST API Design
-- Authentication & Authorization
-- AWS Cloud Integration
-- Docker Deployment
-- MongoDB Database Design
-- Backend Architecture
-- Cloud Storage Management
-- Secure File Upload
-- Production-Level Project Structure
+/home
+
+/login
+
+/dashboard
+
+/upload
+
+/video player
+```
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork the repository
+
+2. Create your feature branch
+
+```bash
+git checkout -b feature/new-feature
+```
+
+3. Commit changes
+
+```bash
+git commit -m "Add new feature"
+```
+
+4. Push
+
+```bash
+git push origin feature/new-feature
+```
+
+5. Create Pull Request
+
+---
+
+# 📄 License
+
+This project is licensed under the MIT License.
 
 ---
 
@@ -350,66 +479,10 @@ This project demonstrates:
 
 **Jyotipriya Das**
 
-🎓 MCA Student
-
-💻 Full Stack Developer
-
-### Skills
-
-- TypeScript
-- Next.js
-- NestJS
-- React.js
-- MongoDB
-- AWS
-- Docker
-- Node.js
-
----
-
-# 🤝 Contributing
-
-Contributions are welcome!
-
-1. Fork the repository
-2. Create your feature branch
-
-```bash
-git checkout -b feature/NewFeature
-```
-
-3. Commit your changes
-
-```bash
-git commit -m "Add new feature"
-```
-
-4. Push to the branch
-
-```bash
-git push origin feature/NewFeature
-```
-
-5. Open a Pull Request
-
----
-
-# ⭐ Support
-
-If you found this project helpful, please consider giving it a ⭐ on GitHub.
-
----
-
-# 📄 License
-
-This project is licensed under the **MIT License**.
-
 ---
 
 <div align="center">
 
-### ⭐ Star this repository if you found it useful!
-
-Made with ❤️ by **Jyotipriya Das**
+⭐ If you found this project helpful, consider giving it a Star!
 
 </div>
