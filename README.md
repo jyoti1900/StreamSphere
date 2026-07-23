@@ -475,9 +475,13 @@ This project is licensed under the MIT License.
 
 ---
 
-# 👨‍💻 Author
+# 👨‍💻 Developed By
 
-**Jyotipriya Das**
+| Team Member | Contribution |
+|-------------|--------------|
+| **Jyotipriya Das** | 🚀 Project Lead, Backend Development, Cloud Infrastructure (AWS), CI/CD Pipeline, Docker, System Architecture |
+| **Sayan Pal** | 💻 Full Stack Development, Testing, Debugging, UI/UX Implementation |
+| **Indrajit Sahu** | 🎨 Frontend Development, UI Components, User Experience |
 
 ---
 
