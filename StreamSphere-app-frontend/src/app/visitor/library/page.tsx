@@ -13,8 +13,6 @@ const sanitizeImageUrl = (imgData: any) => {
   if (!url) return "";
 
   url = url.replace("http://localhost:3000", API_BASE_URL);
-  url = url.replace("http://54.234.119.192:3000", API_BASE_URL);
-  url = url.replace("http://127.0.0.1:5000", API_BASE_URL);
 
   if (url.startsWith("uploads/")) {
     url = `${API_BASE_URL}/${url}`;
