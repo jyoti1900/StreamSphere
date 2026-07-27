@@ -259,18 +259,7 @@ docker-compose down
 
 ---
 
-# ☁ AWS Deployment
-
-The project supports deployment using
-
-- AWS EC2
-- AWS S3
-- IAM Roles
-- Docker
-- GitHub Actions CI/CD
-- CloudFront (Optional)
-
-Deployment Flow
+# ☁ Deployment Flow
 
 <p align="center">
   <img src="Deployment Flow.png" alt="StreamSphere Deployment Flow" width="100%">
