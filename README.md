@@ -195,22 +195,14 @@ Backend
 
 ```env
 PORT=3000
-
-MONGO_URI=
-
-JWT_SECRET=
-
-JWT_REFRESH_SECRET=
-
-AWS_REGION=
-
-AWS_ACCESS_KEY_ID=
-
-AWS_SECRET_ACCESS_KEY=
-
-AWS_BUCKET_NAME=
-
-CLOUDFRONT_URL=
+MONGO_URI=<your_mongodb_connection_string>
+JWT_SECRET=<your_jwt_secret>
+JWT_REFRESH_SECRET=<your_jwt_refresh_secret>
+AWS_REGION=<your_aws_region>
+AWS_ACCESS_KEY_ID=<your_access_key_id>
+AWS_SECRET_ACCESS_KEY=<your_secret_access_key>
+AWS_BUCKET_NAME=<your_s3_bucket_name>
+CLOUDFRONT_URL=<your_cloudfront_distribution_url>
 ```
 
 Frontend
@@ -267,7 +259,7 @@ docker-compose down
 
 ---
 
-# Authentication Flow
+# 🔐 Authentication Flow
 
 <p align="center">
   <img src="Authentication Flow.png" alt="StreamSphere Authentication Flow" width="100%">
