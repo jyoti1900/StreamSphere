@@ -104,8 +104,6 @@ git clone https://github.com/jyoti1900/StreamSphere.git
 cd StreamSphere
 ```
 
----
-
 ## Backend
 
 ```bash
@@ -113,8 +111,6 @@ cd backend
 
 npm install
 ```
-
----
 
 ## Frontend
 
