@@ -18,31 +18,6 @@ high-performance media delivery, AWS cloud integration, and modern full-stack ar
 
 ---
 
-# 📑 Table of Contents
-
-- Overview
-- Features
-- Tech Stack
-- Architecture
-- System Design
-- Folder Structure
-- Installation
-- Environment Variables
-- Running Locally
-- Docker Deployment
-- AWS Deployment
-- API Modules
-- Authentication
-- Cloud Storage
-- Security
-- Performance Optimizations
-- Future Improvements
-- Screenshots
-- Contributing
-- License
-
----
-
 # 🚀 Overview
 
 StreamSphere is a production-ready video streaming platform inspired by modern OTT
