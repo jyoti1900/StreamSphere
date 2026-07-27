@@ -61,7 +61,7 @@ The project follows industry-standard backend architecture using **NestJS**, **N
 # 🏗 System Architecture
 
 <p align="center">
-  <img src="System Architecture.png" alt="StreamSphere System Architecture" width="100%">
+  <img src="StreamSphere System Architecture.png" alt="StreamSphere System Architecture" width="100%">
 </p>
 
 ---
