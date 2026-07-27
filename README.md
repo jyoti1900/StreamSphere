@@ -27,97 +27,34 @@ video content while leveraging AWS cloud services for scalable media storage.
 The project follows industry-standard backend architecture using **NestJS**, **Next.js**,
 **MongoDB**, **AWS S3**, **Docker**, and **JWT Authentication**.
 
----
-
 # ✨ Features
 
-## Authentication
+| 🔐 Authentication | 🎥 Video Management | ☁️ Media Storage |
+|-------------------|---------------------|------------------|
+| ✅ User Registration | ✅ Upload Videos | ✅ AWS S3 Upload |
+| ✅ Secure Login | ✅ Delete Videos | ✅ Secure File Storage |
+| ✅ JWT Authentication | ✅ Edit Metadata | ✅ Signed URLs |
+| ✅ Refresh Tokens | ✅ Categories | ✅ Thumbnail Storage |
+| ✅ Protected APIs | ✅ Thumbnail Upload | ✅ Automatic File Removal |
+| ✅ Role-Based Authorization | ✅ Video Details | |
 
-- User Registration
-- Secure Login
-- JWT Authentication
-- Refresh Tokens
-- Protected APIs
-- Role-Based Authorization
-
----
-
-## Video Management
-
-- Upload Videos
-- Delete Videos
-- Edit Metadata
-- Categories
-- Thumbnail Upload
-- Video Details
-- Streaming Support
-
----
-
-## Media Storage
-
-- AWS S3 Upload
-- Secure File Storage
-- Signed URLs
-- Thumbnail Storage
-- Automatic File Removal
-
----
-
-## User Features
-
-- Profile Management
-- Watch History
-- Continue Watching
-- Search Videos
-- Responsive UI
-
----
-
-## Admin Features
-
-- Dashboard
-- User Management
-- Content Management
-- Analytics Ready
-
----
+| 👤 User Features | 🛠 Admin Features |
+|------------------|-------------------|
+| ✅ Profile Management | ✅ Dashboard |
+| ✅ Watch History | ✅ User Management |
+| ✅ Continue Watching | ✅ Content Management |
+| ✅ Search Videos | ✅ Analytics Ready |
+| ✅ Responsive UI | |
 
 # 🛠 Tech Stack
 
-## Frontend
-
-- Next.js
-- React
-- TypeScript
-- Tailwind CSS
-- Axios
-
-## Backend
-
-- NestJS
-- Node.js
-- TypeScript
-
-## Database
-
-- MongoDB
-- Mongoose
-
-## Cloud
-
-- AWS S3
-- IAM
-- EC2
-- CloudFront (Optional)
-
-## DevOps
-
-- Docker
-- Docker Compose
-- GitHub Actions
-
----
+| Category | Technologies |
+|----------|--------------|
+| **Frontend** | ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) |
+| **Backend** | ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white) |
+| **Database** | ![MongoDB](https://img.shields.io/badge/MongoDB-13AA52?style=flat-square&logo=mongodb&logoColor=white) ![Mongoose](https://img.shields.io/badge/Mongoose-880000?style=flat-square) |
+| **Cloud** | ![AWS S3](https://img.shields.io/badge/AWS_S3-FF9900?style=flat-square&logo=amazons3&logoColor=white) ![EC2](https://img.shields.io/badge/EC2-FF9900?style=flat-square&logo=amazonec2&logoColor=white) ![IAM](https://img.shields.io/badge/IAM-FF9900?style=flat-square&logo=amazonaws&logoColor=white) ![CloudFront](https://img.shields.io/badge/CloudFront-FF9900?style=flat-square&logo=amazonaws&logoColor=white) |
+| **DevOps** | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Docker Compose](https://img.shields.io/badge/Docker_Compose-2496ED?style=flat-square&logo=docker&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) |
 
 # 🏗 System Architecture
 
