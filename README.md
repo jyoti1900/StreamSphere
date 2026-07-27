@@ -121,25 +121,9 @@ The project follows industry-standard backend architecture using **NestJS**, **N
 
 # 🏗 Architecture
 
-```
-Client
-     │
-     ▼
-Next.js Frontend
-     │
- REST API
-     │
-     ▼
-NestJS Backend
-     │
- ├───────────────┐
- │               │
- ▼               ▼
-MongoDB       AWS S3
-                 │
-                 ▼
-          Video Storage
-```
+<p align="center">
+  <img src="System Architecture.png" alt="StreamSphere System Architecture" width="100%">
+</p>
 
 ---
 
@@ -318,7 +302,7 @@ AWS S3
 
 ---
 
-# 🔐 Authentication Flow
+# Authentication Flow
 
 ```
 Register
