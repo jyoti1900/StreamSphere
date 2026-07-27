@@ -59,7 +59,7 @@ The project follows industry-standard backend architecture using **NestJS**, **N
 # 🏗 System Architecture
 
 <p align="center">
-  <img src="System Architecture.png" alt="StreamSphere System Architecture" width="100%">
+  <img src="System Architecture.png" alt="StreamSphere System Architecture" width="50%">
 </p>
 
 ---
@@ -206,54 +206,55 @@ docker-compose down
 
 # 📦 API Modules
 
-- Authentication
-- Users
-- Videos
-- Uploads
-- Categories
-- Search
-- Dashboard
-
----
+| Module | Description |
+|--------|-------------|
+| 🔐 Authentication | User registration, login, JWT, refresh tokens |
+| 👤 Users | User profile and account management |
+| 🎥 Videos | Upload, update, delete, and stream videos |
+| ☁️ Uploads | Media upload and file handling |
+| 🗂 Categories | Video categorization and organization |
+| 🔍 Search | Search and filter videos |
+| 📊 Dashboard | Analytics and administrative overview |
 
 # 🔒 Security
 
-- JWT Authentication
-- Password Hashing
-- Protected Routes
-- Environment Variables
-- AWS IAM Permissions
-- Secure File Upload
-- Input Validation
-- Request Validation
-
----
+| Security Feature | Purpose |
+|------------------|---------|
+| 🔑 JWT Authentication | Secure user authentication |
+| 🔒 Password Hashing | Encrypt user passwords |
+| 🛡 Protected Routes | Restrict unauthorized access |
+| ⚙ Environment Variables | Secure configuration management |
+| ☁️ AWS IAM Permissions | Controlled cloud resource access |
+| 📤 Secure File Upload | Safe media upload handling |
+| ✅ Input Validation | Prevent invalid or malicious input |
+| 📋 Request Validation | Ensure API request integrity |
 
 # ⚡ Performance Optimizations
 
-- Lazy Loading
-- Optimized MongoDB Queries
-- Image Compression
-- Efficient API Design
-- Modular Architecture
-- Cloud Storage
-- Dockerized Deployment
-- TypeScript Strict Mode
-
----
+| Optimization | Benefit |
+|-------------|---------|
+| ⚡ Lazy Loading | Faster initial page load |
+| 🍃 Optimized MongoDB Queries | Reduced database response time |
+| 🖼 Image Compression | Lower bandwidth usage |
+| 🔗 Efficient API Design | Improved backend performance |
+| 🏗 Modular Architecture | Better scalability and maintainability |
+| ☁️ Cloud Storage | Reliable and scalable media storage |
+| 🐳 Dockerized Deployment | Consistent development and production environments |
+| 📘 TypeScript Strict Mode | Improved code quality and reliability |
 
 # 📈 Future Improvements
 
-- Live Streaming
-- Video Recommendations
-- Subscription Plans
-- Payment Gateway
-- AI Video Search
-- Notifications
-- Watch Together
-- Multi-language Support
-- Analytics Dashboard
-
+| Feature | Description |
+|---------|-------------|
+| 📡 Live Streaming | Real-time video broadcasting |
+| 🤖 Video Recommendations | AI-powered personalized suggestions |
+| 💳 Subscription Plans | Premium membership support |
+| 💰 Payment Gateway | Secure online payments |
+| 🔎 AI Video Search | Intelligent content discovery |
+| 🔔 Notifications | Real-time user alerts |
+| 👥 Watch Together | Shared viewing experience |
+| 🌐 Multi-language Support | Localization for global users |
+| 📊 Analytics Dashboard | Advanced insights and reporting |
 ---
 
 # 🤝 Contributing
