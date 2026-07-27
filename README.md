@@ -398,24 +398,6 @@ Authenticated Session
 
 ---
 
-# 📸 Screenshots
-
-```
-Add screenshots here
-
-/home
-
-/login
-
-/dashboard
-
-/upload
-
-/video player
-```
-
----
-
 # 🤝 Contributing
 
 Contributions are welcome.
