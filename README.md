@@ -119,7 +119,7 @@ The project follows industry-standard backend architecture using **NestJS**, **N
 
 ---
 
-# 🏗 Architecture
+# 🏗 System Architecture
 
 <p align="center">
   <img src="System Architecture.png" alt="StreamSphere System Architecture" width="100%">
@@ -272,61 +272,17 @@ The project supports deployment using
 
 Deployment Flow
 
-```
-GitHub
-
-↓
-
-GitHub Actions
-
-↓
-
-AWS EC2
-
-↓
-
-Docker Container
-
-↓
-
-NestJS Server
-
-↓
-
-MongoDB
-
-↓
-
-AWS S3
-```
+<p align="center">
+  <img src="Deployment Flow.png" alt="StreamSphere Deployment Flow" width="100%">
+</p>
 
 ---
 
 # Authentication Flow
 
-```
-Register
-
-↓
-
-Login
-
-↓
-
-JWT Token
-
-↓
-
-Protected Routes
-
-↓
-
-Refresh Token
-
-↓
-
-Authenticated Session
-```
+<p align="center">
+  <img src="Authentication Flow.png" alt="StreamSphere Authentication Flow" width="100%">
+</p>
 
 ---
 
